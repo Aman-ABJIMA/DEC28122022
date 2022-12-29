@@ -45,6 +45,14 @@ namespace Business_Layer
                 }
             }
             return success;
+=======
+            return obj;
+
+     }
+        public bool Save(Product obj)
+        {
+            return true;
+>>>>>>> 5ab85e9ee45c70f217b0d53b1af77c2cab8d2682
         }
 
     }

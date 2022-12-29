@@ -1,9 +1,12 @@
+
 ﻿using Common;
 
 namespace Business_Layer
 {
-    public class Customer : ILoggable
+    
+    public class Customer : EntityBase, ILoggable
     {
+
         #nullable disable
         #region Constructors
         public Customer()
@@ -14,6 +17,7 @@ namespace Business_Layer
         {
            CustomerId= cutomerID;
            AddressList= new List<Address>();
+
         }
         #endregion
 
@@ -26,6 +30,8 @@ namespace Business_Layer
         public static int ObjectCount   { get; set; }
         public List<Address>AddressList{ get; set; }
         public  int CustomerType { get; set; }
+
+        public static int ObjectCount { get; set; }
 
 
         #endregion
@@ -70,6 +76,7 @@ namespace Business_Layer
             return new List<Customer>();
         }
         #endregion
+
 
         #region
         public string Log() => $"{CustomerId}: {FullName} Email:{Email}";

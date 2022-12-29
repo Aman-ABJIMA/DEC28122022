@@ -11,7 +11,13 @@ namespace Business_Layer
     public class Order
     {
         #region Constructors
+
         public Order():this (0)
+        {
+
+        }
+
+        public Order()
         {
             
         }
@@ -29,6 +35,9 @@ namespace Business_Layer
         public int CustomerID { get; set; }
         public int ShippingAddressID { get; set; }
         public List<OrderItem> OrderItems { get; set; }
+
+
+
         #endregion
 
         #region Method:1 Validate Order

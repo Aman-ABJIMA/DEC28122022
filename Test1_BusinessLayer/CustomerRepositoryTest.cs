@@ -96,5 +96,13 @@ namespace Test1_BusinessLayer
             #endregion
 
         }
+=======
+            Assert.AreEqual(obj2.Email, actual.Email);     
+        }
+
+        
+
+
+>>>>>>> 5ab85e9ee45c70f217b0d5
     }
 }
